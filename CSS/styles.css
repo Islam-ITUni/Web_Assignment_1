@@ -58,9 +58,6 @@ background: url("quelf.jpg") center/cover no-repeat;
 .cta{ display:inline-block; margin-top:1rem; padding:0.6rem 1rem; border-radius:8px; background:var(--brand); color:white; text-decoration:none; }
 
 
-
-
-
 .features{ display:flex; gap:2rem; align-items:flex-start; margin-top:1rem; }
 .card{ flex:2; padding:1rem; background:white; border-radius:10px; box-shadow: 0 6px 20px rgba(0,0,0,0.04); }
 
@@ -84,7 +81,6 @@ background: url("quelf.jpg") center/cover no-repeat;
 .hero-img{ width:75%; }
 .float-box{ float:none; width:100%; }
 }
-
 
 
 
@@ -118,5 +114,89 @@ p{ font-size:1rem; }
   display: block;     
   margin: 1rem auto;  
 }
+
+.priority-demo p {
+  color: #0b3d2e;
+}
+
+.priority-demo .class-override {
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+.priority-demo #id-override {
+  color: #e74c3c;
+  border-left: 3px solid #e74c3c;
+  padding-left: 1rem;
+}
+
+.serif-font {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sans-serif-font {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.monospace-font {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+}
+
+.nav-list a:hover {
+  color: #2ecc71;
+  background-color: #f0f9f4;
+}
+
+.spacing-demo {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border: 1px solid #e6e6e6;
+}
+
+.readable-text {
+  line-height: 1.6;
+}
+
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+.profile-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: 2px solid transparent;
+}
+
+.profile-card:hover {
+  border-color: #2ecc71;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-photo-card {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2ecc71;
+}
+
+#special-profile {
+  background: #f0f9f4;
+  border-color: #2ecc71;
+}
+
 
 
