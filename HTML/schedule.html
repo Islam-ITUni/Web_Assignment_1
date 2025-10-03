@@ -62,7 +62,6 @@
       </table>
     </div>
 
-    <!-- Toast Container -->
     <div class="toast-container position-fixed top-0 end-0 p-3">
       <div id="scheduleToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="d-flex">
@@ -93,11 +92,11 @@ function showToast() {
   const toast = new bootstrap.Toast(document.getElementById('scheduleToast'));
   toast.show();
 }
-// Auto-show toast after page load
 document.addEventListener('DOMContentLoaded', function() {
   setTimeout(showToast, 1000);
 });
 </script>
 </body>
 </html>
+
 
