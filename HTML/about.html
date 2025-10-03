@@ -5,70 +5,128 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - Mental Health Awareness Association</title>
 <link rel="icon" href="assets/favicon.ico">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header>
-<div class="container">
-<a href="index.html" class="brand">Mental Health Institution</a>
-<nav>
-<ul class="nav-list">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="schedule.html">Schedule</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-success" href="index.html">Mental Health Institution</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-</div>
 </header>
 
-<main class="container">
-<article>
-<h1>About this mini-site</h1>
-<p>This project is here to raise awareness and announce effective coping strategies and resources for help </p>
+<main class="container my-5">
+  <article>
+    <div class="card shadow-sm p-5 mb-4">
+      <h1 class="text-success mb-4">About this mini-site</h1>
+      <p class="fs-5">This project is here to raise awareness and announce effective coping strategies and resources for help.</p>
 
-<figure>
-<img src="life.jpg" alt="Profile photo">
-<figcaption>Profile photo</figcaption>
-</figure>
+      <figure class="my-4 text-center">
+        <img src="life.jpg" alt="Profile photo" class="img-fluid rounded shadow mb-3" style="max-width: 280px;">
+        <figcaption class="text-muted">Profile photo</figcaption>
+      </figure>
 
-<blockquote cite="https://developer.mozilla.org">
-<p>"Mental Health is a serious issue that should be tackled no matter the circumstances" — Imanbayev Islam</p>
-</blockquote>
+      <blockquote class="blockquote text-center bg-light p-4 rounded">
+        <p class="fs-4 fst-italic">"Mental Health is a serious issue that should be tackled no matter the circumstances"</p>
+        <footer class="blockquote-footer mt-2">Imanbayev Islam</footer>
+      </blockquote>
+    </div>
 
-<section class="spacing-demo">
-  <h2>Our Team</h2>
-  
-  <div class="profile-card">
-    <div class="profile-header">
-      <img src="life.jpg" alt="Profile" class="profile-photo-card">
-      <div>
-        <h3>Imanbayev Islam</h3>
-        <p>Web Developer</p>
+    <!-- FIXED: Working Accordion -->
+    <div class="card shadow-sm p-4 mb-5">
+      <h3 class="text-center text-success mb-4">Frequently Asked Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button fs-5 text-success fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
+              What services do you provide?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body fs-5">
+              We provide online therapy sessions, mindfulness workshops, support groups, and educational resources for mental health awareness and coping strategies.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-5 text-success fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+              Are your services free?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body fs-5">
+              Most of our group sessions and educational resources are free. Individual therapy sessions may have associated costs, but we offer sliding scale fees based on income.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed fs-5 text-success fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false">
+              How can I get immediate help?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body fs-5">
+              For immediate crisis support, please call the National Suicide Prevention Lifeline at <strong>1-800-273-8255</strong> or text <strong>HOME to 444444</strong> for crisis text line support.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <p>Creating digital solutions for mental health awareness and support systems.</p>
-  </div>
 
-  <div class="profile-card" id="special-profile">
-    <div class="profile-header">
-      <img src="life.jpg" alt="Special Profile" class="profile-photo-card">
-      <div>
-        <h3>Mental Health Advocate</h3>
-        <p>Special Member</p>
+    <section class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4 h-100">
+          <div class="d-flex align-items-center mb-3">
+            <img src="life.jpg" alt="Profile" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+            <div>
+              <h4 class="text-success mb-1">Imanbayev Islam</h4>
+              <p class="text-muted mb-0">Web Developer</p>
+            </div>
+          </div>
+          <p class="fs-5">Creating digital solutions for mental health awareness and support systems.</p>
+        </div>
       </div>
-    </div>
-    <p>Providing specialized support and resources for mental health challenges.</p>
-  </div>
-</section>
-
-</article>
+      <div class="col-md-6">
+        <div class="card shadow-sm p-4 h-100 border-success">
+          <div class="d-flex align-items-center mb-3">
+            <img src="life.jpg" alt="Special Profile" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+            <div>
+              <h4 class="text-success mb-1">Mental Health Advocate</h4>
+              <p class="text-muted mb-0">Special Member</p>
+            </div>
+          </div>
+          <p class="fs-5">Providing specialized support and resources for mental health challenges.</p>
+        </div>
+      </div>
+    </section>
+  </article>
 </main>
 
-<footer>
-<div class="container footer-inner">
-<p>Mental Health Awareness Association</p>
-</div>
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
+    <p class="mb-2 fs-5">Mental Health Awareness Association</p>
+    <p class="mb-0 text-muted">Need immediate help? Call: 1-800-273-8255</p>
+  </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
